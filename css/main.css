@@ -1,1 +1,463 @@
+ body{
+	background: #ffffc2;
+	font-family: HElavetica,Arial,sans-serif;/*must more than one*/
+}
 
+.hidden{
+      display:none;
+}
+.container{
+	margin:0 auto;/*center container*/
+	width: 980px;
+	background-color: white;
+	color: black;
+}
+.blackline{
+	background-color: black;
+	width: 980px;/*=container*/
+	height: 30px; 
+}
+.box{
+	background-color: white;
+	color: black;
+	text-align: center;
+	margin: 20px;
+}
+
+.mainHeader{
+	background-color: white;
+   display: flex;
+   flex-flow:row wrap;
+   justify-content: flex-start;
+
+}
+
+.logoHeader{
+	width: 150px;
+	margin:10px 10px 0px 20px;/*top,right,bottom,left*/
+}
+.searchbox{
+	height: 30px;
+	width: 506px;
+	margin:100px 0px 50px 130px;
+}
+
+.searchbox input[type=submit]{
+	border: 2px solid black;
+}
+#search{
+     display: flex;
+   justify-content: center;
+   border: 2px solid black;
+}
+
+.sign{
+	background-color: white;
+   position: fixed;
+   border: 1px solid black;	
+    top: 25px;
+    right: 280px;
+	height: 40px;
+	width: 180px;
+	margin:10px 10px 10px 10px;
+}
+.register{
+  position: absolute;
+  border: 1px solid red;
+  top: 20px;
+  right: 15px;
+   font-size: 15px;
+   color: red;
+}
+
+.whatsnew{
+	border-radius: 8px;
+	background-color: rgba(255,200,200,0.5);
+   position: fixed;
+   border: 1px solid red;	
+   padding: 10px;
+    top: 25px;
+    right: 265px;
+	height: 120px;
+	width: 100px;
+	margin:10px 10px 10px 10px;
+}
+.whatsnew img{
+	height: 100px;
+	width: 100px;
+}
+.InstantHOTPOT{
+  font-size: 15px;
+  color: red;
+  position: absolute;
+  top: 109px;
+}
+.mainNav{
+	font-size: 20px;
+	display: flex;
+	background-color: white;
+    justify-content: center;
+    text-align: center;
+    width: 980px;
+    margin: 0px 100px 0px 100px;
+}
+
+.mainNav > a {
+  color: black;
+  background-color: white;
+  width: 200px;
+  text-align: center;
+}
+.mainNav a:hover {
+  background-color: #FFFFC2;
+  color: black;
+}
+
+.mainNav a.active {
+  background-color: red;
+  width: 200px;
+  color: white;
+}
+
+.blackline2{
+	background-color: black;
+	width: 980px;/*=container*/
+	height: 3px; 
+}
+
+
+/*home page*/
+.Noodle{
+	position: relative;
+    width: 95%;
+	text-align: center;
+	margin: 10px 0px 0px 20px; 
+}
+.Welcome{
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 90%;
+	margin-left: 10px;
+	text-align: center;
+	font-size: 40px;
+}
+.Noodle p{
+	margin-top: 5px;
+	font-size: 20px;
+}
+.Noodle img{
+	display: block;
+	border-radius: 8px;
+	width: 100%;
+	height: auto;
+	opacity: 0.4;
+}
+
+
+.resources{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	margin-top: 20px;
+	background-color: white;
+}
+.china,.japan,.korea{
+	border: 3px solid black;
+	/*border: 3px solid transparent;
+	border-image:linear-gradient(to top, #FCD12A,red);
+	border-image-slice: 5;*/
+	color: black;
+	text-align: left;
+	width: 300px;
+}
+.fadebox{
+	position: relative;
+}
+.image{
+	/*border-radius: 8px;*/
+	opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+.center{
+	 transition: .5s ease;
+     opacity: 0;
+     position: absolute;
+     top: 50%;
+     left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+}
+.fadebox:hover .image{
+	opacity: 0.2;
+}
+.fadebox:hover .center{
+	opacity: 1;
+}
+.text{
+     color: black;
+     font-size: 19px;
+}
+ul{
+	list-style-type: disc;
+	margin:5px 0px 0px 20px;
+}
+ul li {
+  background: white;
+  padding: 5px;
+}
+.resources input{
+	border-radius: 8px;
+    background-color: red;
+    color: white;
+    width: 100px;
+    height: 40px;
+    margin: 5px 0px 5px 20px;
+}
+/*close home*/
+
+
+
+/*open best sellers*/
+.NoodleGallery{
+	display: flex;
+	flex-direction: row;
+	flex-flow: row wrap;
+     padding:20px 20px 0px 10px;/*top right bottom left*/ 
+     width: 940px;
+     display: flex;
+     background-color: white;
+
+}
+
+.galleryImageCon{
+    display: flex;
+    flex-direction: row;
+    flex-flow:row wrap;
+    width: 400px;
+    height: 280px;
+    background-color: white;
+    border: 10px solid black;
+     /*border: 10px solid transparent;
+	border-image:linear-gradient(to bottom, #FCD12A,red);
+	border-image-slice: 5;*/
+    margin:20px 10px;
+    padding: 10px;
+}
+
+
+.galleryImageCon h3{
+	text-align: center;
+	font-size: 20px;
+	color: red;
+}
+.galleryImageCon p{
+	 line-height: 1.3;
+	font-size: 13px;
+	color: black;
+	width: 200px;
+}
+
+.japan1 h3{
+	margin: 20px 40px;
+}
+.china1 h3{
+	margin: 20px 20px;
+}
+.korea1 h3{
+	margin: 20px 80px;
+}
+.china2 h3{
+	margin: 20px 80px;
+}
+.korea2 h3{
+	margin: 20px 0px;
+}
+.china3 h3{
+	margin: 20px 100px;
+}
+
+.NoodleGallery img{
+	border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+	margin:0px 10px;
+	float: left;
+	width: 150px;
+}
+
+.NoodleGallery input{
+	border-radius: 8px;
+    background-color: red;
+    color: white;
+    width: 150px;
+    height: 40px; 
+    margin: 0px 0px 5px 200px; 
+
+}
+/*close best seller*/
+
+
+
+/*open contact*/
+#mainContact{
+background-color: white;
+width: 960px;
+padding: 20px 20px 0px 0px;
+display: flex;
+flex-direction: row;
+justify-content: flex-start;
+}
+
+#contactArea{
+	display: flex;
+	flex-direction: column;
+    text-align: center;
+	background-color: black;
+	color: white;
+	padding: 20px 30px 0px 30px; 
+   width: 350px;
+    margin: 0px 50px 0px 40px;
+}
+#contactArea h3{
+	margin-top: 15px; 
+	font-size: 25px;
+}
+#contactArea p{
+     padding: 5px 0px 10px 0px;
+}
+#contactArea h4{
+	text-align: left;
+	padding: 10px 5px 5px 0px;
+	margin-top: 5px;
+}
+
+.whiteline{
+   background-color: white;
+   width: 350px;
+   height: 2px;
+}
+
+#contactForm{
+	background-color: white;
+	padding: 5px;
+	border: 5px solid black;
+    display: flex;
+    flex-direction: column;
+}
+#contactForm p{
+    text-align: center;
+    font-size:13px; 
+    color:grey;
+}
+#contactForm h3{
+	font-size: 25px;
+	text-align: center;
+	padding: 6px 0px;
+}
+#contactForm label{
+	padding: 10px 0px;
+}
+#contactForm input,textarea{
+    border: 2px solid red;
+    border-radius: 4px;
+	width: 100%;
+	margin:5px 0px;
+	flex-direction: row;
+}
+#contactForm input[type=Email]{
+   height: 20px;
+}
+#contactForm input[type=phone]{
+   height: 20px;
+}
+#contactForm input[type=text]{
+   height: 20px;
+}
+#contactForm input[type=submit] {
+  width: 100%;
+  background-color: red;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input:focus {
+  background-color:#FFFFC2 ;
+}
+textarea:focus {
+  background-color:#FFFFC2 ;
+}
+/*close contact*/
+
+
+
+/*open footer*/
+.mainFooter{
+	display: flex;
+	flex-wrap: wrap;
+  align-content: center;
+	margin-top: 20px;
+	/*padding: 0 20px; top and bottom, right and left*/
+	background-color: white;
+	height:130px;
+}
+.line{
+	background-color: black;
+	width: 980px;
+	height: 3px;
+}
+.footerNav{
+	border-radius: 8px;
+	background-color: black;
+	text-align: center;
+	padding: 10px 0px;
+	 width: 60%;
+	margin: 10px 200px 0px 200px; 
+}
+.footerNav>a{
+	color: white;
+	margin: 0px 30px 0px 30px;
+}
+.copyright{
+	background-color: white;
+	text-align: center;
+	color: grey;
+	margin: 10px 120px 10px 300px;
+}
+.copyright a{
+	color: grey;
+}
+.socialMedia{
+	height: 45px;
+	margin-left: 20px;
+	margin-top: 20px;
+	margin-right: 10px;
+}
+
+.socialMedia img{
+	margin-right: 10px;
+	border-radius: 8px;
+	width: 45px;
+	height: 45px;
+}
+.socialMedia{
+	list-style: none;
+	padding: 0;
+	display: inline;
+	margin-right: 10px;
+}
+.socialMedia a{
+	filter: grayscale(0%);
+}
+.socialMedia  a:hover{
+	filter: grayscale(80%);
+	background-color: none;
+}
+/*close footer*/
