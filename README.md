@@ -1,6 +1,6 @@
 # Meng_Zhu_FIP
 
-**%M Instant Noodles**
+**M Instant Noodles**
 
 Prerequisites : Need [Python3](https://www.python.org/) to build.
 
